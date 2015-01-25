@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	
+	<definition name="common" template="/WEB-INF/layout/classic.jsp">
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+
+
+	<definition name="index" extends="common">
+		<put-attribute name="title" value="Spring Manager" />
+		<put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+		<put-attribute name="current" value="index" />
+
+	</definition>
+	
+	
+	
+	<definition name="login" extends="common">
+		<put-attribute name="title" value="Sign in " />
+		<put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+		<put-attribute name="current" value="login" />
+
+	</definition>
+	
+	<definition name="cat" extends="common">
+		<put-attribute name="title" value="Spring Manager" />
+		<put-attribute name="body" value="/WEB-INF/jsp/cat.jsp" />
+		<put-attribute name="current" value="Category" />
+
+	</definition>
+	
+	<definition name="prod" extends="common">
+		<put-attribute name="title" value="Spring Manager" />
+		<put-attribute name="body" value="/WEB-INF/jsp/prod.jsp" />
+		<put-attribute name="current" value="Product" />
+
+	</definition>
+	
+	<definition name="task" extends="common">
+		<put-attribute name="title" value="Task Manager" />
+		<put-attribute name="body" value="/WEB-INF/jsp/task.jsp" />
+		<put-attribute name="current" value="Task" />
+
+	</definition>
+	
+</tiles-definitions>

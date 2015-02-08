@@ -16,6 +16,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class CategoryController {
+/**
+*juste testing something with jenkins !
+**/
 
 	@Autowired
 	CategoryService categoryService;

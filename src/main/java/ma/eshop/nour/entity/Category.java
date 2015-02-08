@@ -16,6 +16,8 @@ import lombok.Data;
 @Entity(name = "app_category")
 @Data
 public class Category {
+/**bla bla
+*/
 
 
 	
